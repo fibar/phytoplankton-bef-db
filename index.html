@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phytoplankton BEF/PD Reference Database</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Phytoplankton BEF–PD Reference Database</h1>
+    <p>A moderated collection of studies on biodiversity–ecosystem functioning (BEF) and productivity–diversity (PD) relationships.</p>
+  </header>
+
+  <section id="filters">
+    <h2>Filter References</h2>
+    <label>
+      Ecosystem:
+      <select id="ecosystemFilter">
+        <option value="">All</option>
+        <option value="Marine">Marine</option>
+        <option value="Freshwater">Freshwater</option>
+      </select>
+    </label>
+
+    <label>
+      Perspective:
+      <select id="perspectiveFilter">
+        <option value="">All</option>
+        <option value="BEF">BEF</option>
+        <option value="PD">PD</option>
+      </select>
+    </label>
+
+    <label>
+      Variable:
+      <select id="variableFilter">
+        <option value="">All</option>
+        <option value="Chlorophyll">Chlorophyll</option>
+        <option value="Biomass">Biomass</option>
+        <option value="Biovolume">Biovolume</option>
+        <option value="Primary Production">Primary Production</option>
+      </select>
+    </label>
+
+    <input type="text" id="searchBox" placeholder="Search title or authors...">
+  </section>
+
+  <section id="results">
+    <h2>Approved References</h2>
+    <ul id="referenceList"></ul>
+  </section>
+
+  <footer>
+    <p>Maintained as a collaborative effort. New entries are manually approved before appearing here.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
