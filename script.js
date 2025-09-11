@@ -24,7 +24,7 @@ function renderReferences() {
     const matchesVariable = !variableFilter || ref.variables.includes(variableFilter);
     const matchesSearch =
       ref.title.toLowerCase().includes(searchQuery) ||
-      ref.authors.toLowerCase().includes(searchQuery);
+      ref.first_author.toLowerCase().includes(searchQuery);
 
     return matchesEcosystem && matchesPerspective && matchesVariable && matchesSearch;
   });
@@ -41,7 +41,7 @@ function renderReferences() {
     li.innerHTML = `
       <div class="reference-title">${ref.title}</div>
       <div class="reference-meta">
-        ${ref.authors} (${ref.year}) – <em>${ref.journal}</em><br>
+        ${ref.first_author} (${ref.year}) – <em>${ref.journal}</em><br>
         Ecosystem: ${ref.ecosystem} | Perspective: ${ref.perspective}<br>
         Variables: ${ref.variables.join(", ")}<br>
         Dataset available: ${ref.dataset_available ? "Yes" : "No"}<br>

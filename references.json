@@ -1,7 +1,7 @@
 [
   {
     "title": "Phytoplankton diversity enhances ecosystem productivity",
-    "authors": "Smith J., Doe A.",
+    "first_authors": "Smith J., Doe A.",
     "year": 2015,
     "journal": "Journal of Plankton Research",
     "ecosystem": "Marine",
@@ -12,7 +12,7 @@
   },
   {
     "title": "Productivity drives diversity in freshwater phytoplankton",
-    "authors": "Garcia L., Chen K.",
+    "first_authors": "Garcia L., Chen K.",
     "year": 2019,
     "journal": "Freshwater Biology",
     "ecosystem": "Freshwater",
