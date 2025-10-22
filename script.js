@@ -12,7 +12,9 @@ fetch("references.json")
 function renderReferences() {
   const ecosystemFilter = document.getElementById("ecosystemFilter").value;
   const perspectiveFilter = document.getElementById("perspectiveFilter").value;
-  const variableFilter = document.getElementById("variableFilter").value;
+  const productivityFilter = document.getElementById("productivityFilter").value;
+  const diversityFilter = document.getElementById("diversityFilter").value;
+  const studyFilter = document.getElementById("studyFilter").value;
   const searchQuery = document.getElementById("searchBox").value.toLowerCase();
 
   const list = document.getElementById("referenceList");
@@ -21,12 +23,14 @@ function renderReferences() {
   const filtered = references.filter(ref => {
     const matchesEcosystem = !ecosystemFilter || ref.ecosystem === ecosystemFilter;
     const matchesPerspective = !perspectiveFilter || ref.perspective === perspectiveFilter;
-    const matchesVariable = !variableFilter || ref.variables.includes(variableFilter);
+    const matchesProductivity = !productivityFilter || ref.productivity.includes(productivityFilter);
+    const matchesDiversity = !diversityFilter || ref.diversity.includes(diversityFilter);
+    const matchesStudy = !studyFilter || ref.study.includes(studyFilter);
     const matchesSearch =
       ref.title.toLowerCase().includes(searchQuery) ||
       ref.first_author.toLowerCase().includes(searchQuery);
 
-    return matchesEcosystem && matchesPerspective && matchesVariable && matchesSearch;
+    return matchesEcosystem && matchesPerspective && matchesProductivity && matchesDiversity && matchesStudy && matchesSearch;
   });
 
   if (filtered.length === 0) {
@@ -43,7 +47,9 @@ function renderReferences() {
       <div class="reference-meta">
         ${ref.first_author} (${ref.year}) – <em>${ref.journal}</em><br>
         Ecosystem: ${ref.ecosystem} | Perspective: ${ref.perspective}<br>
-        Variables: ${ref.variables.join(", ")}<br>
+        Productivity: ${ref.productivity.join(", ")}<br>
+        Diversity: ${ref.diversity.join(", ")}<br>
+        Study: ${ref.study.join(", ")}<br>
         Dataset available: ${ref.dataset_available ? "Yes" : "No"}<br>
         ${ref.repository_url ? `<a href="${ref.repository_url}" target="_blank">Repository</a>` : ""}
       </div>
@@ -55,6 +61,8 @@ function renderReferences() {
 // Re-render when filters/search change
 document.getElementById("ecosystemFilter").addEventListener("change", renderReferences);
 document.getElementById("perspectiveFilter").addEventListener("change", renderReferences);
-document.getElementById("variableFilter").addEventListener("change", renderReferences);
+document.getElementById("productivityFilter").addEventListener("change", renderReferences);
+document.getElementById("diversityFilter").addEventListener("change", renderReferences);
+document.getElementById("studyFilter").addEventListener("change", renderReferences);
 document.getElementById("searchBox").addEventListener("input", renderReferences);
 

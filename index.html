@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Phytoplankton BEF/PD Reference Database</title>
+  <title>Phytoplankton Diversity-Productivity Reference Database</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,8 +12,9 @@
   </div>
   
   <header>
-    <h1>Phytoplankton BEF–PD Reference Database</h1>
-    <p>A moderated collection of studies on biodiversity–ecosystem functioning (BEF) and productivity–diversity (PD) relationships.</p>
+    <h1>Phytoplankton Diversity-Productivity Reference Database</h1>
+    <p>A collection of studies aligned with the biodiversity–ecosystem functioning (BEF) perspective.<br>
+       The inverted view of productivity driving diversity is also included.</p>
   </header>
 
   <section id="filters">
@@ -31,19 +32,44 @@
       Perspective:
       <select id="perspectiveFilter">
         <option value="">All</option>
-        <option value="BEF">BEF</option>
-        <option value="PD">PD</option>
+        <option value="X: Diversity; Y: Productivity (i.e. BEF)">X: Diversity; Y: Productivity (i.e. BEF)</option>
+        <option value="X: Productivity; Y: Diversity">X: Productivity; Y: Diversity</option>
       </select>
     </label>
 
     <label>
-      Variable:
-      <select id="variableFilter">
+      Productivity method:
+      <select id="productivityFilter">
         <option value="">All</option>
-        <option value="Chlorophyll">Chlorophyll</option>
-        <option value="Biomass">Biomass</option>
+        <option value="Chlorophyll-a in situ">Chlorophyll-a in situ</option>
+        <option value="Biomass carbon">Biomass carbon</option>
         <option value="Biovolume">Biovolume</option>
-        <option value="Primary Production">Primary Production</option>
+        <option value="Radioactive carbon">Radioactive carbon</option>
+        <option value="Satellite-based">Satellite-based</option>
+        <option value="Oxygen">Oxygen</option>
+        <option value="Other">Other</option>
+      </select>
+    </label>
+
+    <label>
+      Diversity method:
+      <select id="diversityFilter">
+        <option value="">All</option>
+        <option value="Microscopy">Microscopy</option>
+        <option value="Pigments - HPLC">Pigments - HPLC</option>
+        <option value="Pigments - Satellite">Pigments - Satellite</option>
+        <option value="DNA-based">DNA-based</option>
+      </select>
+    </label>
+
+    <label>
+      Study:
+      <select id="studyFilter">
+        <option value="">All</option>
+        <option value="Observations of natural ecosystems">Observations of natural ecosystems</option>
+        <option value="Experimental incubations">Experimental incubations</option>
+        <option value="Mesocosm">Mesocosm</option>
+        <option value="Numerical modelling">Numerical modelling</option>
       </select>
     </label>
 
@@ -51,9 +77,9 @@
   </section>
 
    <p>
-     <a href="https://forms.gle/1FAIpQLSeXCQ-O49hzPXfbapt2P1WhQ9sA-D7UC8JjyWfgkw-vkOMQbw" target="_blank">
-       <button>➕ Suggest a New Reference</button>
-     </a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXCQ-O49hzPXfbapt2P1WhQ9sA-D7UC8JjyWfgkw-vkOMQbw/viewform?usp=dialog" 
+         target="_blank" 
+         class="button-link">➕ Suggest a New Reference</a>
    </p>
 
   <section id="results">
