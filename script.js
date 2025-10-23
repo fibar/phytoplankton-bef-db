@@ -66,3 +66,14 @@ document.getElementById("diversityFilter").addEventListener("change", renderRefe
 document.getElementById("studyFilter").addEventListener("change", renderReferences);
 document.getElementById("searchBox").addEventListener("input", renderReferences);
 
+// Display last modified date of the site
+document.addEventListener("DOMContentLoaded", () => {
+  const lastUpdated = new Date(document.lastModified);
+  const formatted = lastUpdated.toLocaleDateString("en-GB", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric"
+  });
+  document.getElementById("lastUpdated").textContent = `Last updated: ${formatted}`;
+});
+
