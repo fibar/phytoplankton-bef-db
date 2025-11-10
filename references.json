@@ -1,50 +1,50 @@
 [
   {
     "title": "Marine biodiversity, ecosystem functioning, and carbon cycles",
-    "first.author": "Beaugrand",
+    "first_author": "Beaugrand",
     "year": 2010,
     "journal": "PNAS",
     "ecosystem": "Marine",
     "perspective": "X: Diversity; Y: Productivity (i.e. BEF)",
     "productivity_method": [null],
-    "diversity.method": "Microscopy",
+    "diversity_method": "Microscopy",
     "study": "Observations of natural ecosystems",
-    "dataset.available": false
+    "dataset_available": false
   },
   {
     "title": "Species richness in marine phytoplankton communities is not correlated to ecosystem productivity",
-    "first.author": "Cermeño",
+    "first_author": "Cermeño",
     "year": 2013,
     "journal": "MARINE ECOLOGY PROGRESS SERIES",
     "ecosystem": "Marine",
     "perspective": "X: Diversity; Y: Productivity (i.e. BEF)",
     "productivity_method": ["Biovolume", "Biomass carbon"],
-    "diversity.method": "Microscopy",
+    "diversity_method": "Microscopy",
     "study": "Observations of natural ecosystems",
-    "dataset.available": false
+    "dataset_available": false
   },
   {
     "title": "Structural equation modeling approach to the diversity−productivity relationship of Wadden Sea phytoplankton",
-    "first.author": "Hodapp",
+    "first_author": "Hodapp",
     "year": 2015,
     "journal": "MARINE ECOLOGY PROGRESS SERIES",
     "ecosystem": "Marine",
     "perspective": "X: Diversity; Y: Productivity (i.e. BEF)",
     "productivity_method": ["Biovolume"],
-    "diversity.method": "Microscopy",
+    "diversity_method": "Microscopy",
     "study": "Numerical modelling",
-    "dataset.available": false
+    "dataset_available": false
   },
   {
     "title": "Responses of primary productivity to increased temperature and phytoplankton diversity",
-    "first.author": "Lewandoska",
+    "first_author": "Lewandoska",
     "year": 2012,
     "journal": "Journal of Sea Research",
     "ecosystem": "Marine",
     "perspective": "X: Diversity; Y: Productivity (i.e. BEF)",
     "productivity_method": ["Biomass carbon", "Radioactive carbon"],
-    "diversity.method": "Microscopy",
+    "diversity_method": "Microscopy",
     "study": "Mesocosm",
-    "dataset.available": false
+    "dataset_available": false
   }
 ]
