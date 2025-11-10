@@ -1,29 +1,50 @@
 [
   {
-    "title": "Phytoplankton diversity enhances ecosystem productivity",
-    "first_author": "Smith J., Doe A.",
-    "year": 2015,
-    "journal": "Journal of Plankton Research",
+    "title": "Marine biodiversity, ecosystem functioning, and carbon cycles",
+    "first.author": "Beaugrand",
+    "year": 2010,
+    "journal": "PNAS",
     "ecosystem": "Marine",
     "perspective": "X: Diversity; Y: Productivity (i.e. BEF)",
-    "productivity": ["Chlorophyll-a in situ", "Radioactive carbon"],
-    "diversity": ["DNA-based"],
-    "study": ["Observations of natural ecosystems"],
-    "dataset_available": true,
-    "repository_url": "https://example.org/marine-timeseries"
+    "productivity_method": [null],
+    "diversity.method": "Microscopy",
+    "study": "Observations of natural ecosystems",
+    "dataset.available": false
   },
   {
-    "title": "Productivity drives diversity in freshwater phytoplankton",
-    "first_author": "Garcia L., Chen K.",
-    "year": 2019,
-    "journal": "Freshwater Biology",
-    "ecosystem": "Freshwater",
-    "perspective": "X: Productivity; Y: Diversity",
-    "productivity": ["Biomass carbon", "Biovolume"],
-    "diversity": ["DNA-based"],
-    "study": ["Numerical modelling"],
-    "dataset_available": false,
-    "repository_url": ""
+    "title": "Species richness in marine phytoplankton communities is not correlated to ecosystem productivity",
+    "first.author": "Cermeño",
+    "year": 2013,
+    "journal": "MARINE ECOLOGY PROGRESS SERIES",
+    "ecosystem": "Marine",
+    "perspective": "X: Diversity; Y: Productivity (i.e. BEF)",
+    "productivity_method": ["Biovolume", "Biomass carbon"],
+    "diversity.method": "Microscopy",
+    "study": "Observations of natural ecosystems",
+    "dataset.available": false
+  },
+  {
+    "title": "Structural equation modeling approach to the diversity−productivity relationship of Wadden Sea phytoplankton",
+    "first.author": "Hodapp",
+    "year": 2015,
+    "journal": "MARINE ECOLOGY PROGRESS SERIES",
+    "ecosystem": "Marine",
+    "perspective": "X: Diversity; Y: Productivity (i.e. BEF)",
+    "productivity_method": ["Biovolume"],
+    "diversity.method": "Microscopy",
+    "study": "Numerical modelling",
+    "dataset.available": false
+  },
+  {
+    "title": "Responses of primary productivity to increased temperature and phytoplankton diversity",
+    "first.author": "Lewandoska",
+    "year": 2012,
+    "journal": "Journal of Sea Research",
+    "ecosystem": "Marine",
+    "perspective": "X: Diversity; Y: Productivity (i.e. BEF)",
+    "productivity_method": ["Biomass carbon", "Radioactive carbon"],
+    "diversity.method": "Microscopy",
+    "study": "Mesocosm",
+    "dataset.available": false
   }
 ]
-
