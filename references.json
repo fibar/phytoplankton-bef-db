@@ -6,8 +6,8 @@
     "journal": "PNAS",
     "ecosystem": "Marine",
     "perspective": "X: Diversity; Y: Productivity (i.e. BEF)",
-    "productivity_method": [null],
-    "diversity_method": "Microscopy",
+    "productivity_method": [],
+    "diversity_method": ["Microscopy"],
     "study": "Observations of natural ecosystems",
     "dataset_available": false
   },
@@ -19,19 +19,19 @@
     "ecosystem": "Marine",
     "perspective": "X: Diversity; Y: Productivity (i.e. BEF)",
     "productivity_method": ["Biovolume", "Biomass carbon"],
-    "diversity_method": "Microscopy",
+    "diversity_method": ["Microscopy"],
     "study": "Observations of natural ecosystems",
     "dataset_available": false
   },
   {
-    "title": "Structural equation modeling approach to the diversity−productivity relationship of Wadden Sea phytoplankton",
+    "title": "Structural equation modeling approach to the diversity-productivity relationship of Wadden Sea phytoplankton",
     "first_author": "Hodapp",
     "year": 2015,
     "journal": "MARINE ECOLOGY PROGRESS SERIES",
     "ecosystem": "Marine",
     "perspective": "X: Diversity; Y: Productivity (i.e. BEF)",
     "productivity_method": ["Biovolume"],
-    "diversity_method": "Microscopy",
+    "diversity_method": ["Microscopy"],
     "study": "Numerical modelling",
     "dataset_available": false
   },
@@ -43,7 +43,7 @@
     "ecosystem": "Marine",
     "perspective": "X: Diversity; Y: Productivity (i.e. BEF)",
     "productivity_method": ["Biomass carbon", "Radioactive carbon"],
-    "diversity_method": "Microscopy",
+    "diversity_method": ["Microscopy"],
     "study": "Mesocosm",
     "dataset_available": false
   }
