@@ -23,9 +23,9 @@ function renderReferences() {
   const filtered = references.filter(ref => {
     const matchesEcosystem = !ecosystemFilter || ref.ecosystem === ecosystemFilter;
     const matchesPerspective = !perspectiveFilter || ref.perspective === perspectiveFilter;
-    const matchesProductivity = !productivityFilter || ref.productivity.includes(productivityFilter);
-    const matchesDiversity = !diversityFilter || ref.diversity.includes(diversityFilter);
-    const matchesStudy = !studyFilter || ref.study.includes(studyFilter);
+    const matchesProductivity = !productivityFilter || ref.productivity_method.includes(productivityFilter);
+    const matchesDiversity = !diversityFilter || ref.diversity_method.includes(diversityFilter);
+    const matchesStudy = !studyFilter || ref.study === studyFilter;
     const matchesSearch =
       ref.title.toLowerCase().includes(searchQuery) ||
       ref.first_author.toLowerCase().includes(searchQuery);
@@ -47,9 +47,9 @@ function renderReferences() {
       <div class="reference-meta">
         ${ref.first_author} (${ref.year}) – <em>${ref.journal}</em><br>
         Ecosystem: ${ref.ecosystem} | Perspective: ${ref.perspective}<br>
-        Productivity: ${ref.productivity.join(", ")}<br>
-        Diversity: ${ref.diversity.join(", ")}<br>
-        Study: ${ref.study.join(", ")}<br>
+        Productivity: ${ref.productivity_method?.join(", ")}<br>
+        Diversity: ${ref.diversity_method?.join(", ")}<br>
+        Study: ${ref.study}<br>
         Dataset available: ${ref.dataset_available ? "Yes" : "No"}<br>
         ${ref.repository_url ? `<a href="${ref.repository_url}" target="_blank">Repository</a>` : ""}
       </div>
@@ -76,4 +76,3 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   document.getElementById("lastUpdated").textContent = `Last updated: ${formatted}`;
 });
-
