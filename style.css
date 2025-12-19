@@ -62,16 +62,6 @@ h1 {
   color: #666;
 }
 
-.warning-banner {
-  background-color: #ffcc00;   /* yellow */
-  color: #000;                 /* black text */
-  font-weight: bold;
-  text-align: center;
-  padding: 10px;
-  border-bottom: 2px solid #ffa500;
-  font-size: 1.1em;
-}
-
 .button-link {
   display: inline-block;
   background-color: #007bff;
